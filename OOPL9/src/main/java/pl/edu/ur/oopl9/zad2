@@ -1,0 +1,27 @@
+package pl.edu.ur.oopl9;
+
+import java.util.Iterator;
+import java.util.Random;
+import java.util.TreeSet;
+
+/**
+ *
+ * @author HP
+ */
+public class zad2 {
+     public static void Zadanie_2(){
+        Random losowe = new Random();
+        TreeSet<Integer> Treerand = new TreeSet<>();
+        for(int i=0;i<100;i++)
+        {Treerand.add(losowe.nextInt(100));
+        }
+
+        Iterator tree = Treerand.iterator();
+
+        while(tree.hasNext())
+        {
+            Integer value = (Integer)tree.next();
+            System.out.println("Wartość losowa : "+value);
+        }     
+}
+}
